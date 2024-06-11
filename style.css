@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+background-color: rgb(7,7,12);
+/* overflow: hidden; */
+/* text-shadow: 1px 2px 1px #8CCDFF; */
+
+
+}
+   
+
+
+
+/* Variables */
+:root{
+    --primary-color: #F6FAB9;
+    --secondary-color: #03AED2;
+    --accent-color: #640D6B;
+    --accent-color-dark: #FF8A08;
+    --box-shadow: 2px 1px 3px 2px #03AED2;
+    --hover-color:#12ed3a;
+
+
+}
+/* Utility Classes */
+.flex{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+    font-size:13px;
+    padding: 10px;
+    color: #fff;
+}
+a:hover{
+    background-image: linear-gradient(120deg, #B93CF2, #769579, #1290);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    transition: 0.7s ease-out;
+}
+
+/* Designing the nav */
+.nav{
+    height: 3.5rem;
+    width: 100vw;
+    background-color:transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    top:0;
+    z-index: 1;
+   
+
+}
+.nav i{
+    font-size: 1rem;
+}
+.dev-name h3:hover{
+  color: var(--hover-color);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.7s ease-out;
+}
+.dev-name h3{
+    background-image: linear-gradient(180deg, #B93CF2, #769579, rgba(164, 170, 217, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-section{
+    height:65vh;
+    width: 100vw;
+    margin-top: 1rem;
+    z-index: 1;
+}
+.hero-section #hero-title{
+    height: 200px;
+    width: 500px;
+    /* border: 1px solid rgb(208, 52, 52); */
+    padding-left: 45px;
+    background-image: linear-gradient(120deg, #B93CF2, #769579, #1290);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-text{
+    font-size: 2.5rem;
+}
+.hero-des{
+    font-size: 1rem;
+}
+.cta {
+    padding: 5px;
+    background-image: linear-gradient(120deg, #B93CF2, #769579, #1290);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    padding: 5px;
+    border: 1px solid burlywood;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.cta:hover{
+    border-color: var(--hover-color);
+}
+.hero-section > #hero-img > img{
+    height: 300px;
+    width: 300px;
+    border-radius: 1.2rem;
+}
+/* Designing the About Me Section */
+#about-me-section{
+    height: 400px;
+    margin-top: 50px;
+  
+    /* background-color: #91e19c; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about-me{
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+/* .circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #12ed3a;
+    position: relative;
+} */
+.about-me{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 17px;
+    gap:20px;
+}
+.about-me #my-name{
+    background-image: linear-gradient(-190deg, #f7f7f7, #171717, rgba(222, 222, 222, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.about-me img{
+    height: 200px;
+    width: 200px;
+   
+    border-radius: 50%;
+    border: none;
+   
+
+}
+#dev-des{
+    height: 150px;
+    background-color: #000000;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#dev-des p{
+    text-align: justify;
+    font-size: 0.8rem;
+    background-image: linear-gradient(-190deg, #9d00ff, #cf5610, rgba(26, 255, 213, 0.964));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+    font-weight: 700;
+}
+span{
+    font-size: 0.8rem;
+}
+/* Designing the projects section */
+/* #projects{
+    height: 200px;
+    width: 500px;
+    background-color: #F6FAB9;
+    margin-left: 20px;
+   
+    
+} */
+
+.my-projects{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.project-title{
+    text-align: center;
+    color: #03AED2;
+    /* margin-top: 15px; */
+
+}
+.mywork {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* hovering elements */
+.about-me #my-name:hover{
+  transform: scale(1.2);
+  transition: 0.5s; 
+}
+.project-title:hover{
+    border-bottom: 1px dotted whitesmoke;
+    transition: 0.5s;
+
+}
+#hero-img img:hover{
+  box-shadow:2px 3px 3px 3px #03AED2;
+  transition: 0.5s;
+}
+/* hover the end */
+
+#contact-section{
+    height: 100px;
+    width: 80%;
+    /* background-color: #12ed3a; */
+   display: flex;
+   position: relative;
+   margin-top: 3.5rem;
+   
+}
+#contact-section .contact-me{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:30%;
+    left: 62%;
+    transform: translate(-50%,-50%);
+}
+.contact-title{
+    color: #03AED2;
+
+}
+.contact-des{
+    color: #959595;
+}
+footer{
+   color: #03AED2;
+   display: flex;
+   justify-content: center;
+   margin-top: 1.2rem;
+   font-size: 0.8rem;
+   background-color: #273429;
+}
+
